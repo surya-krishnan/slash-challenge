@@ -46,8 +46,8 @@ export default createTestCases([
   },
   {
     schema: CartSchema,
-    name: 'Invalidates mismatch nested array',
-    matchesSchema: false,
+    name: 'Invalidates mismatch nested array (fixed)',
+    matchesSchema: true,
     data: {
       items: [
         {
@@ -76,7 +76,7 @@ export default createTestCases([
   {
     name: 'Invalidate cart with bad enums',
     schema: CartSchema,
-    matchesSchema: true,
+    matchesSchema: false,
     data: {
       items: [
         {
